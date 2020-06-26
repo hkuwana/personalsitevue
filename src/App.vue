@@ -1,9 +1,7 @@
 <template>
     <div id="app">
         <Header />
-        <div id="nav">
-        </div>
-        <router-view />
+        <router-view id="mainpage" />
         <Main />
         <Footer />
     </div>
@@ -25,12 +23,23 @@ export default {
 </script>
 
 <style lang="sass">
-*
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
-html, body
-  width:100%
-  height:100%
-  margin:0
-  padding:0
+@font-face
+  font-family: 'Hanken'
+  src: url("./assets/font/Hanken-Light.ttf") format("truetype")
 
+*
+  font-family: 'Hanken'
+  box-sizing: border-box
+  // background: #3D3A3A
+  // color: white
+
+#mainpage
+  text-align: center
+  padding: 1em 4em
+
+html, body
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 0
 </style>

@@ -1,6 +1,6 @@
 <template>
     <section class="footer">
-        <h1 id="catch">Let me help you do more with less</h1>
+        <h1 id="catch">Let me help you create.</h1>
         <h2 id="mobile-catch">Let me help you.</h2>
         <ul class="imageLinks">
             <div class="logo-list">
@@ -40,7 +40,7 @@ export default {
     color: black
     -webkit-font-smoothing: antialiased
     #catch
-        font-size: 3em
+        font-size: 5vw
     .imageLinks
         list-style: none
         .logo-list
@@ -51,7 +51,7 @@ export default {
                 margin-right: 1em
 #mobile-catch
     display: none
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 700px)
   .view-container
     width: 100%
     margin-left: 0
@@ -59,5 +59,7 @@ export default {
     display: none
   #mobile-catch
     display: block
+    
+
 
 </style>

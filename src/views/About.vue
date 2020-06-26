@@ -24,12 +24,10 @@ export default {
 <style lang="sass" scoped>
 .about
   text-align: center
-  padding: 0
+  padding: 1em 4em
   .colors
     list-style: none
-    padding: 1em 4em
     color: white
-    margin: 10px auto
     #jet
       background: #3D3A3A
     #royalbluedark
