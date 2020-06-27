@@ -1,15 +1,15 @@
 <template>
     <section class="header">
         <div class="header-left">
-            <router-link class="head_logo" to="/">
-                <h1>Hiro Kuwana</h1>
+            <router-link class="head-logo" to="/">
+                <img id="head-icon" src="../../assets/website_logo.png" alt="website-logo">
             </router-link>
         </div>
         <nav class="header-right">
             <ul class="main-nav">
-                <router-link class="head_nav" to="/about">About</router-link>|
-                <router-link class="head_nav" to="/blog">My Thoughts</router-link>|
-                <router-link class="head_nav" to="/contact">Contact</router-link>|
+                <router-link class="head-nav" to="/about">About</router-link>|
+                <router-link class="head-nav" to="/blog">Thoughts</router-link>|
+                <router-link class="head-nav" to="/contact">Contact</router-link>|
             </ul>
         </nav>
     </section>
@@ -17,32 +17,44 @@
 
 <script>
 export default {
-    name: "Header"
+        name: "Header"
 };
 </script>
 
 <style lang="sass" scoped>
 .header
+    // position: -webkit-sticky
+    // position: sticky
+    top: 0
     display: flex
     flex-wrap: wrap
     align-items: center
     justify-content: space-around
     max-width: 100%
-    padding: 20px
+    padding: var(--navHeightDesktop)
     margin: 0 auto
-    color: white!important
+    #head-icon
+        height: 50px
     .header-left, .header-right
         margin: 1em 0 .5em
         display: inline
+    .head-nav .head-logo
+        color: red
+    router-link
+        color: var(--colorJet)
         
-        
-
-
-@media (min-width: 960px)
-    .container
-        justify-content: space-between
-.head_nav:hover
+.head-nav:hover
     -webkit-transition-delay: .1s
     transition-delay: .1s
-    color: #143790
+    color: var(--colorRoyalDarkBlue)
+.head-logo:hover
+    -webkit-transition-delay: .1s
+    transition-delay: .1s
+    color: var(--colorRoyalDarkBlue)       
+
+
+@media (min-width: var(--breakpointDesktopSmall))
+.container
+    justify-content: space-between
+
 </style>

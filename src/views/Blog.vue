@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum optio deleniti commodi quaerat magni, quam porro impedit, harum in pariatur sed totam dolore hic repellendus ab dolorum similique. Nisi, voluptatem?</p>
+        <p>This will be my blog page. If you're rading this, it means this is still under construction</p>
     </div>
 </template>
 

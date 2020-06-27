@@ -1,24 +1,26 @@
 <template>
-  <div class="about">
-      <h1>Website colors</h1>
-      <p>I like playing around with colors, so this is a theme I just went randomly until I found something that was nice</p>
-      <ul class ="colors">
-        <li id="jet">Jet</li>
-        <li id="royalbluedark">Royal Blue Dark</li>
-        <li id="egyptianblue">Egyptian Blue</li>
-        <li id="seagreen">Sea Green</li>
-        <li id="xanadu">Xanadu</li>
-      </ul>
-  </div>
+    <div class="about">
+        <h1>Website colors</h1>
+        <p>I like playing around with colors, so this is a theme I just went randomly until I found something that was nice</p>
+        <ul class="colors">
+            <li id="jet">Jet</li>
+            <li id="royalbluedark">Royal Blue Dark</li>
+            <li id="egyptianblue">Egyptian Blue</li>
+            <li id="seagreen">Sea Green</li>
+            <li id="xanadu">Xanadu</li>
+            <li id="cream">Cream</li>
+        </ul>
+        <h2>How I built this site</h2>
+        <p>Built the site pretty much from scratch, except with some help using the VueJS framework and looking at other sites for some inspiration</p>
+    </div>
 </template>
 
 
 <script>
 export default {
-  name: 'About',
-  components: {
-  }
-}
+    name: "About",
+    components: {}
+};
 </script>
 
 <style lang="sass" scoped>
@@ -29,16 +31,16 @@ export default {
     list-style: none
     color: white
     #jet
-      background: #3D3A3A
+      background: var(--colorJet)
     #royalbluedark
-      background: #162766
+      background: var(--colorRoyalDarkBlue)
     #egyptianblue
-      background: #143790
+      background: var(--colorEgyptianBlue)
     #seagreen
-      background: #408E63
+      background: var(--colorSeaGreen)
     #xanadu
-      background: #7B8E7E
-
-
-
+      background: var(--colorXanadu)
+    #cream
+      background: var(--colorOffWhite)
+      color: black
 </style>

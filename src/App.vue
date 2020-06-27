@@ -1,8 +1,8 @@
 <template>
     <div id="app">
         <Header />
+        <ProgressBar />
         <router-view id="mainpage" />
-        <Main />
         <Footer />
     </div>
 </template>
@@ -10,14 +10,16 @@
 <script>
 import Footer from "./components/layouts/Footer.vue";
 import Header from "./components/layouts/Header.vue";
-import Main from "./components/Main.vue";
+import ProgressBar from "./components/layouts/ProgressBar.vue";
+// import Main from "./components/Main.vue";
 
 export default {
     name: "app",
     components: {
         Footer,
         Header,
-        Main
+        ProgressBar,
+        // Main
     }
 };
 </script>
@@ -26,17 +28,56 @@ export default {
 @font-face
   font-family: 'Hanken'
   src: url("./assets/font/Hanken-Light.ttf") format("truetype")
+@font-face
+  font-family: 'Simplifica'
+  src: url("./assets/font/SIMPLIFICA-Typeface.ttf") format("truetype")
+:root
+  --breakpointPhoneSmall: 320px
+  --breakpointPhoneMedium: 375px
+  --breakpointPhoneLarge: 512px
+  --breakpointPhoneXLarge: 640px
+  --breakpointTablet: 768px
+  --breakpointDesktopSmall: 1024px
+  --breakpointDesktopMedium: 1280px
+  --breakpointDesktopLarge: 1440px
+  --breakpointDesktopXLarge: 1920px
+  --mobileMargin: 14.5vw
+  --desktopMarginXS: 3.25vw
+  --desktopMarginS: 6.25vw
+  --desktopMarginL: 12.5vw
+  --colorWhite: #fff
+  --colorOffWhite: #f4f1f2
+  --colorCream: #ede9e5
+  --colorTrueBlack: #000
+  --colorJet: #3D3A3A
+  --colorRoyalDarkBlue: #162766
+  --colorEgyptianBlue: #143790
+  --colorSeaGreen: #408E63
+  --colorXanadu: #7B8E7E
+  --fontHanken: "Hanken"
+  --fontArialBold: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  --fontSimplifica: "Simplifica"
+  --desktopInputMargin: 3vw
+  --navHeightMobile: 8.14vw
+  --navTopMobile: 6.67vw
+  --navHeightDesktop: 3.18vw
+  --navTopDesktop: 2.6vw
 
 *
-  font-family: 'Hanken'
+  font-family: var(--fontHanken)
   box-sizing: border-box
-  // background: #3D3A3A
-  // color: white
+  // align-items: center
+  text-align: center
 
+p
+  font-family: var(--fontSimplifica)
+  letter-spacing: .09em
+  font-size: 2em
+  line-height: 2em
+  font-weight: 300
 #mainpage
   text-align: center
-  padding: 1em 4em
-
+  bottom: 0
 html, body
   width: 100%
   height: 100%

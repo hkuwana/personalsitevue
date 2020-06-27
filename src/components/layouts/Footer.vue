@@ -1,7 +1,7 @@
 <template>
     <section class="footer">
-        <h1 id="catch">Let me help you create.</h1>
-        <h2 id="mobile-catch">Let me help you.</h2>
+        <h1 id="catch">Want to chat?</h1>
+        <h2 id="mobile-catch">Want to talk?</h2>
         <ul class="imageLinks">
             <div class="logo-list">
                 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/hiroyuki-kuwana/">
@@ -35,12 +35,14 @@ export default {
 
 <style lang="sass" scoped>
 .footer
+    padding: 6vh
     text-align: center!important
-    background-color: #7B8E7E
-    color: black
+    background-color: var(--colorJet)
+    color: var(--colorCream)
     -webkit-font-smoothing: antialiased
     #catch
         font-size: 5vw
+        margin-top: 0
     .imageLinks
         list-style: none
         .logo-list
@@ -51,7 +53,7 @@ export default {
                 margin-right: 1em
 #mobile-catch
     display: none
-@media screen and (max-width: 700px)
+@media screen and (max-width: var(--breakpointDesktopSmall))
   .view-container
     width: 100%
     margin-left: 0
@@ -60,6 +62,7 @@ export default {
   #mobile-catch
     display: block
     
-
+.logos
+    fill: var(--colorCream)
 
 </style>
