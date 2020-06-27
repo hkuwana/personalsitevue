@@ -31,6 +31,10 @@ export default {
 @font-face
   font-family: 'Simplifica'
   src: url("./assets/font/SIMPLIFICA-Typeface.ttf") format("truetype")
+@font-face
+  font-family: 'NimbusSanL-Reg'
+  src: url("./assets/font/NimbusSanL-Reg.otf") format("opentype")
+
 :root
   --breakpointPhoneSmall: 320px
   --breakpointPhoneMedium: 375px
@@ -55,7 +59,7 @@ export default {
   --colorSeaGreen: #408E63
   --colorXanadu: #7B8E7E
   --fontHanken: "Hanken"
-  --fontArialBold: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  --fontNimbusSanLReg: "NimbusSanL-Reg"
   --fontSimplifica: "Simplifica"
   --desktopInputMargin: 3vw
   --navHeightMobile: 8.14vw
@@ -64,10 +68,11 @@ export default {
   --navTopDesktop: 2.6vw
 
 *
-  font-family: var(--fontHanken)
   box-sizing: border-box
   // align-items: center
   text-align: center
+  font-family: var(--fontNimbusSanLReg)
+  letter-spacing: .09em
 
 p
   font-family: var(--fontSimplifica)
@@ -83,4 +88,7 @@ html, body
   height: 100%
   margin: 0
   padding: 0
+
+body
+  -webkit-font-smoothing: antialiased
 </style>
