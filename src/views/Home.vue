@@ -1,23 +1,23 @@
 <template>
     <div class="home">
         <div class="top-section">
-            <div></div>
+            <div class="spacing"></div>
             <div>
-                <img src="../assets/quora-photo.png" alt="self-photo" class="quora-phot" />
+                <img src="../assets/quora-photo.png" alt="self-photo" class="quora-photo" />
             </div>
         </div>
         <div class="scroll-to-section about-me">
-            <div></div>
+            <div class="spacing"></div>
             <div class="header">
                 <h1>About me</h1>
             </div>
             <div class="information">
                 <p>I'm a rising senior at Brown University studying Environmental Engineering. Right now, I'm doing product development, design, and deployment</p>
             </div>
-            <div></div>
+            <div class="spacing"></div>
         </div>
         <div class="scroll-to-section kezari">
-            <div></div>
+            <div class="spacing"></div>
             <div class="header">
                 <h1>Kezari</h1>
             </div>
@@ -25,15 +25,15 @@
                 <p>We focused on creating sustainable and aesthetic pants for female travelers</p>
                 <router-link class="kezari-nav" to="/about">Read More Here</router-link>|
             </div>
-            <div></div>
+            <div class="spacing"></div>
         </div>
         <div class="scroll-to-section skills">
-            <div></div>
+            <div class="spacing"></div>
             <div class="header">
                 <h1>Skills</h1>
             </div>
             <div class="skill-list">
-                <div>
+                <div class="skill-head">
                     <p>Languages</p>
                 </div>
                 <div>
@@ -43,13 +43,13 @@
                         <li>Basic: Spanish</li>
                     </ul>
                 </div>
-                <div>
+                <div class="skill-head">
                     <p>Technical</p>
                 </div>
                 <div>
                     <p>Javascript (Vue), CSS, HTML, Python, MATLAB, MYSQL</p>
                 </div>
-                <div>
+                <div class="skill-head">
                     <p>Interests</p>
                 </div>
                 <div>
@@ -58,7 +58,7 @@
             </div>
         </div>
         <div class="scroll-to-section works">
-            <div></div>
+            <div class="spacing"></div>
             <div class="header">
                 <h1 class>My Writings</h1>
             </div>
@@ -70,7 +70,7 @@
 					<router-link class ="blog" to="/blog">Blog-Posts</router-link>|
                 </ul>
             </div>
-            <div></div>
+            <div class="spacing"></div>
         </div>
     </div>
 </template>
@@ -83,52 +83,52 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-*
+p
+	font-size: 2em
+	line-height: 2em
+	font-weight: 300
 
 .home
 	align-items: center
-	grid-template-columns: 5vw 1fr 1fr 5vw
+
 .top-section
 	height: 80vh
-	display: grid
 	top: 0
 	background: black
+	display: none
+
 .scroll-to-section
 	min-height: 101vh
-	display: grid
 	position: relative
 	color: var(--colorWhite)
-
+	overflow: auto
+	display: grid
 .header
-	padding-top: 30vh
 	font-size: 2em
 	text-transform: uppercase
 	font-family: var(--fontNimbusSanLReg)
 	letter-spacing: .07em
+	padding-top: 10vh
+	padding-bottom: 0
 
-.information
-	padding-top: 30vh
+.spacing
+	display: none
 
 .about-me
-	grid-template-columns: 5vw 1fr 1fr 5vw
 	background: var(--colorRoyalDarkBlue)
+
 .kezari
-	grid-template-columns: 5vw 1fr 1fr 5vw
 	background: var(--colorEgyptianBlue)
 	.kezari-nav
 		color: var(--colorCream)
-.works
-	grid-template-columns: 5vw 1fr 1fr 5vw
-	background: var(--colorSeaGreen)
 
 .skills
-	grid-template-columns: 5vw 1fr 2fr 5vw
 	background: var(--colorXanadu)
-	.skill-list
-		display: grid
-		grid-template-columns: 1fr 1fr
-		grid-template-rows: repeat(3, 1fr)
-		align-items: center
+	.skill-head
+		text-decoration: underline
+.works
+	background: var(--colorSeaGreen)
+
 .list li, a
 	color: inherit
 	font-family: var(--fontSimplifica)
@@ -138,12 +138,26 @@ export default {
 	list-style: none
 .blog
 	font-size: 3em
-.writing-links
-	padding-top: 20vh
 
 
-@media only screen and (max-width: var(--breakpointDesktopSmall))
-	.scroll-to-section .top-section
-		grid-template-columns: 1fr
+@media only screen and (min-width: 800px)
+	.top-section
+		display: grid
+	.about-me, .kezari, .works, .home
+		grid-template-columns: 5vw 1fr 1fr 5vw
+	.information
+		padding-top: 25vh
+	.skills
+		grid-template-columns: 5vw 1fr 2fr 5vw
+		background: var(--colorXanadu)
+		.skill-list
+			display: grid
+			grid-template-columns: 1fr 1fr
+			grid-template-rows: repeat(3, 1fr)
+			align-items: center
+	.spacing
+		display: inline-grid
+	.header
+		padding-top: 25vh
 
 </style>
