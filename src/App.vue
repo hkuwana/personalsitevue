@@ -76,7 +76,7 @@ export default {
 
 p
   font-family: var(--fontSimplifica)
-  letter-spacing: .09rem
+  letter-spacing: .09em
 
 #mainpage
   text-align: center
