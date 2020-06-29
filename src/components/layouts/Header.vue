@@ -53,8 +53,4 @@ export default {
     color: var(--colorRoyalDarkBlue)       
 
 
-@media (min-width: var(--breakpointDesktopSmall))
-.container
-    justify-content: space-between
-
 </style>

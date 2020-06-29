@@ -1,7 +1,6 @@
 <template>
     <section class="footer">
         <h1 id="catch">Want to chat?</h1>
-        <h2 id="mobile-catch">Want to talk?</h2>
         <ul class="imageLinks">
             <div class="logo-list">
                 <a
@@ -61,8 +60,6 @@ export default {
 @media only screen and (min-width: var(--breakpointTablet))
     #catch
         display: block
-    #mobile-catch
-        display: none
         .view-container
         width: 100%
         margin-left: 0

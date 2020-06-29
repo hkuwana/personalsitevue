@@ -72,20 +72,19 @@ export default {
   // align-items: center
   text-align: center
   font-family: var(--fontNimbusSanLReg)
-  letter-spacing: .09em
+  letter-spacing: .09rem
 
 p
   font-family: var(--fontSimplifica)
-  letter-spacing: .09em
+  letter-spacing: .09rem
 
 #mainpage
   text-align: center
-  bottom: 0
+  min-height: 100vh
 html, body
-  width: 100%
-  height: 100%
   margin: 0
   padding: 0
+
 
 body
   -webkit-font-smoothing: antialiased

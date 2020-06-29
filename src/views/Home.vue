@@ -2,7 +2,7 @@
     <div class="home">
         <div class="top-section">
             <div class="spacing"></div>
-            <div>
+            <div class="self-photo">
                 <img src="../assets/quora-photo.png" alt="self-photo" class="quora-photo" />
             </div>
         </div>
@@ -12,7 +12,7 @@
                 <h1>About me</h1>
             </div>
             <div class="information">
-                <p>I'm a rising senior at Brown University studying Environmental Engineering. Right now, I'm doing product development, design, and deployment</p>
+                <p>I'm a rising senior at Brown University studying Environmental Engineering. Currently working on developing, designing, and deploying products</p>
             </div>
             <div class="spacing"></div>
         </div>
@@ -64,10 +64,14 @@
             </div>
             <div>
                 <ul class="list writing-links">
-					<a target="_blank" rel="noopener noreferrer" href="https://www.quora.com/profile/Hiro-Kuwana">
-					<p>Quora</p>
-					</a>
-					<router-link class ="blog" to="/blog">Blog-Posts</router-link>|
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.quora.com/profile/Hiro-Kuwana"
+                    >
+                        <p>Quora</p>
+                    </a>
+                    <router-link class="blog" to="/blog">Blog-Posts</router-link>|
                 </ul>
             </div>
             <div class="spacing"></div>
@@ -84,80 +88,82 @@ export default {
 
 <style lang="sass" scoped>
 p
-	font-size: 2em
-	line-height: 2em
-	font-weight: 300
-
+    font-size: 2em
+    line-height: 2em
+    font-weight: 300
+    margin: 0 3rem 3rem 0
 .home
-	align-items: center
+    align-items: center
+
+.self-photo
+    margin: 0 0 0 0
 
 .top-section
-	height: 80vh
-	top: 0
-	background: black
-	display: none
+    max-height: 660px
+    top: 0
+    background: var(--colorCream)
+    display: none
 
 .scroll-to-section
-	min-height: 101vh
-	position: relative
-	color: var(--colorWhite)
-	overflow: auto
-	display: grid
+    min-height: 101vh
+    position: relative
+    color: var(--colorWhite)
+    overflow: auto
+    display: grid
 .header
-	font-size: 2em
-	text-transform: uppercase
-	font-family: var(--fontNimbusSanLReg)
-	letter-spacing: .07em
-	padding-top: 10vh
-	padding-bottom: 0
+    font-size: 2em
+    text-transform: uppercase
+    font-family: var(--fontNimbusSanLReg)
+    letter-spacing: .07em
+    padding-top: 10vh
+    padding-bottom: 0
 
 .spacing
-	display: none
+    display: none
 
 .about-me
-	background: var(--colorRoyalDarkBlue)
+    background: var(--colorRoyalDarkBlue)
 
 .kezari
-	background: var(--colorEgyptianBlue)
-	.kezari-nav
-		color: var(--colorCream)
+    background: var(--colorEgyptianBlue)
+    .kezari-nav
+        color: var(--colorCream)
 
 .skills
-	background: var(--colorXanadu)
-	.skill-head
-		text-decoration: underline
+    background: var(--colorXanadu)
+    .skill-head
+        text-decoration: underline
 .works
-	background: var(--colorSeaGreen)
+    background: var(--colorSeaGreen)
 
 .list li, a
-	color: inherit
-	font-family: var(--fontSimplifica)
-	letter-spacing: .09em
-	font-size: 2em
-	line-height: 2em
-	list-style: none
+    color: inherit
+    font-family: var(--fontSimplifica)
+    letter-spacing: .09rem
+    font-size: 2rem
+    line-height: 2rem
+    list-style: none
 .blog
-	font-size: 3em
-
+    font-size: 3rem
+    display: none
 
 @media only screen and (min-width: 800px)
-	.top-section
-		display: grid
-	.about-me, .kezari, .works, .home
-		grid-template-columns: 5vw 1fr 1fr 5vw
-	.information
-		padding-top: 25vh
-	.skills
-		grid-template-columns: 5vw 1fr 2fr 5vw
-		background: var(--colorXanadu)
-		.skill-list
-			display: grid
-			grid-template-columns: 1fr 1fr
-			grid-template-rows: repeat(3, 1fr)
-			align-items: center
-	.spacing
-		display: inline-grid
-	.header
-		padding-top: 25vh
-
+    .top-section
+        display: grid
+    .about-me, .kezari, .works, .home
+        grid-template-columns: 5vw 1fr 1fr 5vw
+    .information
+        padding-top: 25vh
+    .skills
+        grid-template-columns: 5vw 1fr 2fr 5vw
+        background: var(--colorXanadu)
+        .skill-list
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: repeat(3, 1fr)
+            align-items: center
+    .spacing
+        display: inline-grid
+    .header
+        padding-top: 25vh
 </style>
