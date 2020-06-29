@@ -63,7 +63,7 @@
                 <h1 class>My Writings</h1>
             </div>
             <div>
-                <ul class="list writing-links">
+                <ul class="list">
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
@@ -71,7 +71,7 @@
                     >
                         <p>Quora</p>
                     </a>
-                    <router-link class="blog" to="/blog">Blog-Posts</router-link>|
+                    <router-link class="blog" to="/blog">Blog</router-link>|
                 </ul>
             </div>
             <div class="spacing"></div>
@@ -144,8 +144,7 @@ p
     line-height: 2rem
     list-style: none
 .blog
-    font-size: 3rem
-    display: none
+    font-size: 4rem
 
 @media only screen and (min-width: 800px)
     .top-section
@@ -164,6 +163,8 @@ p
             align-items: center
     .spacing
         display: inline-grid
-    .header
+    .header, .list
         padding-top: 25vh
+    
+        
 </style>
