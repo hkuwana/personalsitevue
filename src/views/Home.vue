@@ -165,6 +165,6 @@ p
             align-items: center
     .spacing
         display: inline-grid
-    .head
+    .header
         padding-top: 25vh
 </style>
