@@ -46,13 +46,13 @@
                 <div class="skill-head">
                     <p>Technical</p>
                 </div>
-                <div>
+                <div class="list">
                     <p>Javascript (Vue), CSS, HTML, Python, MATLAB, MYSQL</p>
                 </div>
                 <div class="skill-head">
                     <p>Interests</p>
                 </div>
-                <div>
+                <div class="list">
                     <p>Hiking, Philosophy, Running, Meditating, Go (Weiqi)</p>
                 </div>
             </div>
@@ -91,7 +91,7 @@ p
     font-size: 2em
     line-height: 2em
     font-weight: 300
-    margin: 0 3rem 3rem 0
+
 .home
     align-items: center
 
@@ -115,7 +115,7 @@ p
     text-transform: uppercase
     font-family: var(--fontNimbusSanLReg)
     letter-spacing: .07em
-    padding-top: 10vh
+    padding-top: 5vh
     padding-bottom: 0
 
 .spacing
@@ -135,16 +135,18 @@ p
         text-decoration: underline
 .works
     background: var(--colorSeaGreen)
+.list
+    padding-inline-start: 0px
+    li, a
+        color: inherit
+        font-family: var(--fontSimplifica)
+        letter-spacing: .09rem
+        font-size: 2rem
+        line-height: 2rem
+        list-style: none
+    .blog
+        font-size: 4rem
 
-.list li, a
-    color: inherit
-    font-family: var(--fontSimplifica)
-    letter-spacing: .09rem
-    font-size: 2rem
-    line-height: 2rem
-    list-style: none
-.blog
-    font-size: 4rem
 
 @media only screen and (min-width: 800px)
     .top-section
@@ -163,8 +165,6 @@ p
             align-items: center
     .spacing
         display: inline-grid
-    .header, .list
+    .head
         padding-top: 25vh
-    
-        
 </style>

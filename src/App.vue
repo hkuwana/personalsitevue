@@ -2,7 +2,7 @@
     <div id="app">
         <Header />
         <ProgressBar />
-        <router-view id="mainpage" />
+        <Main />
         <Footer />
     </div>
 </template>
@@ -11,7 +11,7 @@
 import Footer from "./components/layouts/Footer.vue";
 import Header from "./components/layouts/Header.vue";
 import ProgressBar from "./components/layouts/ProgressBar.vue";
-// import Main from "./components/Main.vue";
+import Main from "./components/Main.vue";
 
 export default {
     name: "app",
@@ -19,7 +19,7 @@ export default {
         Footer,
         Header,
         ProgressBar,
-        // Main
+        Main
     }
 };
 </script>
@@ -78,13 +78,9 @@ p
   font-family: var(--fontSimplifica)
   letter-spacing: .09em
 
-#mainpage
-  text-align: center
-  min-height: 100vh
 html, body
   margin: 0
   padding: 0
-
 
 body
   -webkit-font-smoothing: antialiased
