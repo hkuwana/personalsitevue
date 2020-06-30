@@ -11,4 +11,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+#mainpage
+    min-height: 100vh
 </style>
