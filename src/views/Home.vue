@@ -103,7 +103,7 @@ p
     top: 0
     background: var(--colorCream)
     display: none
-
+    clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0)
 .scroll-to-section
     min-height: 101vh
     position: relative
@@ -139,14 +139,13 @@ p
     padding-inline-start: 0px
     li, a
         color: inherit
-        font-family: var(--fontSimplifica)
+        font-family: var(--fontMonteserrat)
         letter-spacing: .09rem
         font-size: 2rem
         line-height: 2rem
         list-style: none
     .blog
         font-size: 4rem
-
 
 @media only screen and (min-width: 800px)
     .top-section

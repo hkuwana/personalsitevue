@@ -26,7 +26,7 @@
                 </a>
             </div>
         </ul>
-        <p>@2020 Hiroyuiki Kuwana. All rights reserved.</p>
+        <p>©2020 Hiroyuiki Kuwana. All rights reserved.</p>
     </section>
 </template>
 

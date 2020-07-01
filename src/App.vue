@@ -60,7 +60,8 @@ export default {
   --colorXanadu: #7B8E7E
   --fontHanken: "Hanken"
   --fontNimbusSanLReg: "NimbusSanL-Reg"
-  --fontSimplifica: "Simplifica"
+  --fontMonteserrat: "Simplifica"
+  --fontMonteserrat: "Montserrat", sans-serif
   --desktopInputMargin: 3vw
   --navHeightMobile: 8.14vw
   --navTopMobile: 6.67vw
@@ -75,7 +76,7 @@ export default {
   letter-spacing: .09rem
 
 p
-  font-family: var(--fontSimplifica)
+  font-family: var(--fontMonteserrat)
   letter-spacing: .09em
 
 html, body
