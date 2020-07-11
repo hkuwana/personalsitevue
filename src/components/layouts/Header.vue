@@ -2,14 +2,15 @@
     <section class="header">
         <div class="header-left">
             <router-link class="head-logo" to="/">
-                <img id="head-icon" src="../../assets/website_logo.png" alt="website-logo">
+                <img id="head-icon" src="../../assets/website_logo.png" alt="website-logo" />
             </router-link>
         </div>
         <nav class="header-right">
             <ul class="main-nav">
-                <router-link class="head-nav" to="/about">About</router-link>|
-                <router-link class="head-nav" to="/blog">Thoughts</router-link>|
-                <router-link class="head-nav" to="/contact">Contact</router-link>|
+                <router-link class="head-nav" :to="{ name: 'About', params: {id: 'visitor'} }">About</router-link>|
+                <router-link class="head-nav" :to="{ name: 'Blog'}">Thoughts</router-link>|
+                <router-link class="head-nav" :to="{ name: 'Projects'}">Projects</router-link>|
+                <router-link class="head-nav" :to="{ name: 'Contact'}">Contact</router-link>|
             </ul>
         </nav>
     </section>
@@ -17,7 +18,7 @@
 
 <script>
 export default {
-        name: "Header"
+    name: "Header"
 };
 </script>
 
@@ -42,7 +43,7 @@ export default {
         color: red
     router-link
         color: var(--colorJet)
-        
+
 .head-nav:hover
     -webkit-transition-delay: .1s
     transition-delay: .1s
@@ -50,7 +51,5 @@ export default {
 .head-logo:hover
     -webkit-transition-delay: .1s
     transition-delay: .1s
-    color: var(--colorRoyalDarkBlue)       
-
-
+    color: var(--colorRoyalDarkBlue)
 </style>

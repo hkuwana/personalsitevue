@@ -1,10 +1,12 @@
 <template>
     <div class="home">
         <div class="top-section">
-            <div class="spacing"></div>
-            <div class="self-photo">
-                <img src="../assets/quora-photo.png" alt="self-photo" class="quora-photo" />
+            <div class="spacing">
+                <h1>Hiro Kuwana</h1>
+                <h2></h2>
+                
             </div>
+
         </div>
         <div class="scroll-to-section about-me">
             <div class="spacing"></div>
@@ -71,7 +73,7 @@
                     >
                         <p>Quora</p>
                     </a>
-                    <router-link class="blog" to="/blog">Blog</router-link>|
+                    <router-link class="blog" to="/blog">Blog</router-link>
                 </ul>
             </div>
             <div class="spacing"></div>
@@ -99,11 +101,10 @@ p
     margin: 0 0 0 0
 
 .top-section
-    max-height: 660px
-    top: 0
+    min-height: 40vh
     background: var(--colorCream)
     display: none
-    clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0)
+    clip-path: polygon(0% 0%, 100% 0, 100% 50%, 50% 100%, 0 50%, 0 0)
 .scroll-to-section
     min-height: 101vh
     position: relative
@@ -119,7 +120,10 @@ p
     padding-bottom: 0
 
 .spacing
-    display: none
+    padding-top: 10vh
+    *
+        font-size: 3em
+        text-transform: uppercase
 
 .about-me
     background: var(--colorRoyalDarkBlue)

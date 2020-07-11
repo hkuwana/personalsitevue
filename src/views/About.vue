@@ -1,7 +1,8 @@
 <template>
     <div class="about">
+        <h1>Hello, {{$route.params.id}}</h1>
         <h1>Website colors</h1>
-        <p>I like playing around with colors, so this is a theme I just went randomly until I found something that was nice</p>
+        <p>I like playing around with colors, so this is a theme I just went to randomly until I found something that was nice</p>
         <ul class="colors">
             <li id="jet">Jet</li>
             <li id="royalbluedark">Royal Blue Dark</li>
@@ -19,7 +20,15 @@
 <script>
 export default {
     name: "About",
-    components: {}
+    components: {
+
+    },
+    watch: {
+      $route(to, from){
+        console.log("to", to);
+        console.log("from", from)
+      }
+    }
 };
 </script>
 
