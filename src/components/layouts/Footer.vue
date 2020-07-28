@@ -53,10 +53,6 @@ export default {
                 margin-right: 1em
                 fill: var(--colorCream)
 
-// #catch
-//     display: none
-//     font-size: 5vw
-//     margin-top: 0
 @media only screen and (min-width: var(--breakpointTablet))
     #catch
         display: block

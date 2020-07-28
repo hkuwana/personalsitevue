@@ -4,9 +4,7 @@
             <div class="spacing">
                 <h1>Hiro Kuwana</h1>
                 <h2></h2>
-                
             </div>
-
         </div>
         <div class="scroll-to-section about-me">
             <div class="spacing"></div>
@@ -26,6 +24,25 @@
             <div class="information">
                 <p>We focused on creating sustainable and aesthetic pants for female travelers</p>
                 <router-link class="kezari-nav" to="/about">Read More Here</router-link>|
+            </div>
+            <div class="spacing"></div>
+        </div>
+        <div class="scroll-to-section works">
+            <div class="spacing"></div>
+            <div class="header">
+                <h1 class>My Writings</h1>
+            </div>
+            <div>
+                <ul class="list">
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.quora.com/profile/Hiro-Kuwana"
+                    >
+                        <p>Quora</p>
+                    </a>
+                    <router-link class="blog" to="/blog">Blog</router-link>
+                </ul>
             </div>
             <div class="spacing"></div>
         </div>
@@ -59,32 +76,13 @@
                 </div>
             </div>
         </div>
-        <div class="scroll-to-section works">
-            <div class="spacing"></div>
-            <div class="header">
-                <h1 class>My Writings</h1>
-            </div>
-            <div>
-                <ul class="list">
-                    <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://www.quora.com/profile/Hiro-Kuwana"
-                    >
-                        <p>Quora</p>
-                    </a>
-                    <router-link class="blog" to="/blog">Blog</router-link>
-                </ul>
-            </div>
-            <div class="spacing"></div>
-        </div>
     </div>
 </template>
 
 <script>
 export default {
     name: "Home",
-    components: {}
+    components: {},
 };
 </script>
 
